@@ -12,7 +12,7 @@ public class ContaTerminal {
             // instanciando um objeto da classse conta
             Conta conta = new Conta();
 
-            System.out.println("Sua conta foi criada e numero dela é " + conta.getNumeroConta());
+            System.out.println("Conta Cridada com sucesso!");
 
             System.out.println("Digite o nome do titular da conta:");
             String nome = sc.next();
@@ -22,9 +22,9 @@ public class ContaTerminal {
             double valor = sc.nextDouble();
             conta.depositar(valor);
 
-            System.out.println("Numero canta: " + conta.getNumeroConta());
-            System.out.println("Titular: " + conta.getTitular());
-            System.out.println("Saldo R$ " + conta.getSaldo());
+            System.out.println("Olá " + conta.getTitular()
+                    + ", obrigado por criar uma conta em nosso banco, sua agência é " + conta.agencia + ", conta "
+                    + conta.getNumeroConta() + " e seu saldo " + conta.getSaldo() + " já está disponível para saque");
 
         } else {
             System.out.println("Operação finalizada!");

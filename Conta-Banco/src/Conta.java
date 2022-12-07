@@ -10,6 +10,7 @@ public class Conta {
      * incrementado sempre que uma conta for instanciada
      */
     private static int idConta;
+    public final String agencia = "066-9";
     private int numeroConta;
     private String titular;
     private double saldo;
