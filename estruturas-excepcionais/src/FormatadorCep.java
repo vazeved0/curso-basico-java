@@ -14,7 +14,8 @@ public class FormatadorCep {
     }
 
     /**
-     * Metodo criado para retornar um CEP formatado
+     * Metodo criado para retornar um CEP formatado ou uma exceção do tipo
+     * CepInvalidoException caso o CEP passado no parametro seja diferente de 8.
      */
     static String formatarCep(String cep) throws CepInvalidoException {
         if (cep.length() != 8)
